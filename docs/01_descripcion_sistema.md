@@ -10,8 +10,9 @@
 | **Tipo de sistema** | Plataforma de carpooling universitario (PWA – Progressive Web App) |
 | **Integrantes del equipo** | Santiago Carvajal, Isabella Ramírez, Nicolás Cuastumal |
 | **Programa académico** | Ingeniería de Sistemas – Pontificia Universidad Javeriana Cali |
-| **URL del repositorio** | https://github.com/santiagocarvajalv/Pplataformas_n |
+| **URL del repositorio** | https://github.com/NicolasCuastumalCordoba/Pplataformas_n |
 | **URL de la aplicación** | Ejecutar localmente con Live Server en `http://localhost:5501/index.html` |
+| **URL de la web** | https://pplataformas-n.vercel.app |
 | **Versión actual** | 4.0 |
 | **Fecha de elaboración** | 2026-05-13 |
 
@@ -177,7 +178,7 @@ Pplataformas_n-main/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/santiagocarvajalv/Pplataformas_n.git
+git clone https://github.com/NicolasCuastumalCordoba/Pplataformas_n
 cd Pplataformas_n-main
 
 # 2. Abrir en VS Code
