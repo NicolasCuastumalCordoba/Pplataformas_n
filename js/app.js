@@ -159,6 +159,47 @@ function bindAuth(tab) {
   });
 
   const lBtn = document.getElementById('l-btn');
+  const forgotBtn =
+  document.getElementById('forgot-password');
+
+if (forgotBtn) {
+
+  forgotBtn.onclick = async () => {
+
+    const email = document
+      .getElementById('l-email')
+      .value
+      .trim();
+
+    if (!email) {
+
+      toast(
+        'Escribe tu correo primero',
+        'error'
+      );
+
+      return;
+
+    }
+
+    try {
+
+      await resetPassword(email);
+
+      toast(
+        'Te enviamos un correo para recuperar tu contraseña 📩',
+        'success'
+      );
+
+    } catch (e) {
+
+      toast(parseError(e), 'error');
+
+    }
+
+  };
+
+}
   if (lBtn) lBtn.onclick = async () => {
     const email = document.getElementById('l-email').value.trim();
     const pass  = document.getElementById('l-pass').value;
@@ -172,6 +213,7 @@ function bindAuth(tab) {
       toast(parseError(e), 'error');
       btnLoad(lBtn, false);
     }
+    
   };
 
   const rBtn = document.getElementById('r-btn');
