@@ -1,4 +1,4 @@
-import { currentUser, onUserChange, register, login, signOut, updateRole, parseError, authReady } from './auth.js';
+import { currentUser, onUserChange, register, login, signOut, updateRole, parseError, authReady, resetPassword } from './auth.js';
 import { listenAvailableRides, getMyRides, getMyBookings, getRideById, createRide, bookRide, cancelBooking, completeRide, cancelRide } from './rides.js';
 import { toast, showModal, btnLoad, badgeHtml, rideCardHtml, skeletonHtml, loaderHtml, emptyHtml, formatDate } from './ui.js';
 
@@ -88,6 +88,13 @@ function authHTML(tab) {
         </div>
       </div>
       <button id="l-btn" class="btn btn-primary mt-8">Iniciar sesión</button>
+      <button
+  id="forgot-password"
+  class="btn btn-ghost mt-8"
+  type="button"
+>
+  ¿Olvidaste tu contraseña?
+</button>
     </div>
 
     <!-- REGISTER -->
