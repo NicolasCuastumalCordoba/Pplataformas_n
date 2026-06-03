@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+.env
+.env.local
+.env.*.local
+dist/
+build/
+*.log
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.playwright/
+test-results/
+playwright-report/

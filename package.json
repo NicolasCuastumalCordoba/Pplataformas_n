@@ -1,0 +1,32 @@
+{
+  "name": "pplataformas-n",
+  "version": "4.0.0",
+  "description": "JaveCupos - Sistema de Carpooling Universitario PUJ Cali. Pruebas automatizadas con Playwright.",
+  "scripts": {
+    "start": "npx http-server -p 5501 -c-1 -o index.html",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:auth": "playwright test tests/auth.spec.js",
+    "test:rides": "playwright test tests/rides.spec.js",
+    "test:profile": "playwright test tests/profile.spec.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "carpooling",
+    "puj",
+    "javieriana",
+    "playwright",
+    "testing",
+    "qa"
+  ],
+  "author": "Santiago Carvajal, Isabella Ramírez, Nicolás Cuastumal",
+  "license": "MIT"
+}
